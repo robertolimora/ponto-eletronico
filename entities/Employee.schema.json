@@ -1,0 +1,36 @@
+{
+  "name": "Employee",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Nome completo do funcionário"
+    },
+    "employee_id": {
+      "type": "string",
+      "description": "ID único do funcionário"
+    },
+    "password": {
+      "type": "string",
+      "description": "Senha individual do funcionário"
+    },
+    "department": {
+      "type": "string",
+      "description": "Departamento do funcionário"
+    },
+    "position": {
+      "type": "string",
+      "description": "Cargo do funcionário"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true,
+      "description": "Status ativo do funcionário"
+    }
+  },
+  "required": [
+    "name",
+    "employee_id",
+    "password"
+  ]
+}

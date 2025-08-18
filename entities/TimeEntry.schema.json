@@ -1,0 +1,39 @@
+{
+  "name": "TimeEntry",
+  "type": "object",
+  "properties": {
+    "employee_id": {
+      "type": "string",
+      "description": "ID do funcionário"
+    },
+    "employee_name": {
+      "type": "string",
+      "description": "Nome do funcionário"
+    },
+    "entry_type": {
+      "type": "string",
+      "enum": [
+        "entrada",
+        "saida",
+        "saida_almoco",
+        "retorno_almoco"
+      ],
+      "description": "Tipo de registro"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Data e hora do registro"
+    },
+    "location": {
+      "type": "string",
+      "description": "Local do registro"
+    }
+  },
+  "required": [
+    "employee_id",
+    "employee_name",
+    "entry_type",
+    "timestamp"
+  ]
+}
