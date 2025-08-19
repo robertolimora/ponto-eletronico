@@ -28,3 +28,4 @@ export default function StatsCard({ title, value, icon: Icon, color, isLoading, 
     </div>
   );
 }
+}
